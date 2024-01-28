@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Reading Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <section id="home">
+        <nav>
+            <img src="images/Logo.png" alt="">
+            <div class="navLinks" id="navLinks">
+                <!-- <i class="bi bi-x-lg" onclick="hideMenu()"></i> -->
+                <ul>
+                    <a href="#home"><li>Home</li></a>
+                    <a href="#About"><li>About</li></a>
+                    <a href="#Translation"><li>Translation</li></a>
+                    <a href="#Blog"><li>Blog</li></a>
+                </ul>
+                <div class="nav-signup">
+                    <a class="nav-login" href="loginForm.html">Log in</a> <span><a href="signupform.html"><button>Sign Up</button></a></span>
+                </div>
+            </div>
+            <!-- <i class="bi bi-list" onclick="showMenu()"></i> -->
+        </nav> 
+        <hr>
+        <div class="home-content">
+            <div class="home-cont">
+                <p class="home-text">Make Self-Purication By Reading The Quran</p>
+                <p class="home-text1">Make self-purification by reading Quran. This website is all about holy quran. You can read, you can listen and you can learn so many things about Islam.</p>
+                <div class="button-img">
+                    <a class="button-img1" href="https://quran.com/en"><img class="img1" src="images/Group 17555.png"><span>Read Quran</span></a>
+                    <a class="button-img2" href="https://quranicaudio.com/"><img class="img1" src="images/Group 17554.png"><span>Quran Audio</span></a>
+                </div>
+                <div class="home-img">
+                    <img class="home-img1" src="images/Rectangle 42.png">
+                    <img class="home-img2" src="images/Rectangle 43.png">
+                </div>
+
+                <div class="home-numbers">
+                    <div class="home-number">
+                        <p class="chap-num">30</p>
+                        <h2 class="verses">Quran's Chapters</h2>
+                    </div>
+                    <div class="border"></div>
+                    <div class="home-number">
+                        <p class="chap-num">114</p>
+                        <h2 class="verses" >Quran's Surahs</h2>
+                    </div>
+                    <div class="border"></div>
+                    <div class="home-number">
+                        <p class="chap-numb">6236</p>
+                        <h2 class="verses">Quran's Verses</h2>
+                    </div>
+                    <div class="border"></div>
+                    <div class="home-number">
+                        <p class="chap-num">86</p>
+                        <h2 class="verses">Makki Surahs</h2>
+                    </div>
+                    <div class="border"></div>
+                    <div class="home-number">
+                        <p class="chap-num">28</p>
+                        <h2 class="verses">Madani Surahs</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="About">
+        <div class="Abt-content">
+            <div class="About">
+                <div class="about-img">
+                    <img class="About-img" src="images/Rectangle 1097.png">
+                    <img class="About-img1" src="images/Rectangle 1096.png">
+                </div>
+                <div>
+                    <h1>About Holy Quran</h1>
+                    <div class="About-content">
+                        <p>The Quran, also romanized Qur'an or Koran, is the central religious text of Islam, believed by Muslims to be a revelation from Allah. It is organized in 30 chapters, 114 surahs which consist of 6,236 verses.</p>
+                        <p class="about-content">In addition to its religious significance, it is widely regarded as the finest work in Arabic literature.</p>
+                    </div>
+                    <a class="about-button" href="learn more.html">Learn More</a>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <div id="Translation">
+        <div>
+            <p class="abt-header">Read The Holy Quran <br> With Translations</p>
+            <div class="about-head">
+                <div class="abt-chap">
+                    <!-- <a class="about-button1" href="#about-surah">Surah</a> -->
+                    <button class="about-button1" id="iButton" type="button">Surah</button>
+                    <button class="about-button2" id="myButton" type="button">Juz</button>
+                </div>
+                <div class="about-head1">
+                    <p>Sort by:</p>
+                    <h4>Ascending</h4><span><img src="images/layer1.png" alt=""></span>
+                </div>
+            </div>
+        </div>
+        <div class="trans-late">
+            <div id="aboutSurah">
+                <div class="container mt-3">
+                    <h2></h2>
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Juz Numbers</th>
+                          <th>Juz Name</th>
+                          <th>Starts</th>
+                          <th>Ends</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Alif Lam Meem</td>
+                          <td>1. Al-Fatiha Verse 1</td>
+                          <td>2. Al-Baqarah Verse 141</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Sayaqool</td>
+                          <td>2. Al-Baqarah Verse 142</td>
+                          <td>2. Al-Baqarah Verse 252</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Tilkal Rusul</td>
+                          <td>2. Al-Baqarah Verse 253</td>
+                          <td>3. Al-Imran Verse 92</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Lan Tana Loo</td>
+                            <td>3. Al-Imran Verse 93</td>
+                            <td>4. An-Nisa Verse 23</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Wal Mohsanat</td>
+                            <td>4. An-Nisa Verse 24</td>
+                            <td>4. An-Nisa Verse 147</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>La Yuhibbullah</td>
+                            <td>4. An-Nisa Verse 148</td>
+                            <td>5. Al-Ma'idah Verse 81</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Wa Iza Samiu</td>
+                            <td>5. Al-Ma'idah Verse 82</td>
+                            <td>6. Al-An'am Verse 110</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Wa Lau Annana</td>
+                            <td>6. Al-An'am Verse 111</td>
+                            <td>7. Al-A'raf Verse 87</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Qalal Malao</td>
+                            <td>7. Al-A'raf Verse 88</td>
+                            <td>8. Al-Anfal Verse 40</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Wa A'lamu</td>
+                            <td>8. Al-Anfal Verse 41</td>
+                            <td>9. At-Tauba Verse 92</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+            </div>
+            <div id="aboutJuz">
+                <div class="about-box">
+                    <div class="border-box1">
+                        <div class="border-box"><p>01</p></div>
+                        <div class="abt-box1">
+                            <div class="box">
+                                <p class="box1">Al-Fatihah</p>
+                                <p class="box4">The Opener</p>
+                            </div>
+                            <div class="box">
+                                <p class="box1">الفاتحة</p>
+                                <p class="box2">7 verses</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-box1">
+                        <div class="border-box"><p>02</p></div>
+                        <div class="abt-box1">
+                            <div class="box">
+                                <p class="box1">Al-Baqarah</p>
+                                <p class="box2">The Cow</p>
+                            </div>
+                            <div class="box">
+                                <p class="box1">البقرة</p>
+                                <p class="box2">286 verses</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-box1">
+                        <div class="border-box"><p>03</p></div>
+                        <div class="abt-box">
+                            <div class="box">
+                                <p class="box1">Al-Imran</p>
+                                <p class="box2">Family of Imran</p>
+                            </div>
+                            <div class="box">
+                                <p class="box1">آل عمران</p>
+                                <p class="box2">200 verses</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-box1">
+                    <div class="border-box1">
+                        <div class="border-box"><p>04</p></div>
+                        <div class="abt-box1">
+                            <div class="box">
+                                <p class="box1">Al-Nisa</p>
+                                <p class="box2">The Women</p>
+                            </div>
+                            <div class="box">
+                                <p class="box1">النساء</p>
+                                <p class="box2">175 verses</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bord-box">
+                        <div class="border-box"><p>05</p></div>
+                        <div class="Abt-box">
+                            <div class="box">
+                                <p class="box1">Al-Maidah</p>
+                                <p class="box3">The Table Spread</p>
+                            </div>
+                            <div class="box">
+                                <p class="box1">المائدة</p>
+                                <p class="box2">120 verses</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-box1">
+                        <div class="border-box"><p>06</p></div>
+                        <div class="abt-box1">
+                            <div class="box">
+                                <p class="box1">Al-Anam</p>
+                                <p class="box2">The Cattle</p>
+                            </div>
+                            <div class="box">
+                                <p class="box1">الانام</p>
+                                <p class="box2">165 verses</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-box1">
+                    <div class="border-box1">
+                        <div class="border-box"><p>07</p></div>
+                        <div class="abt-box1">
+                            <div class="box">
+                                <p class="box1">Al-Araf</p>
+                                <p class="box3">The Heights</p>
+                            </div>
+                            <div class="box">
+                                <p class="box1">العراف</p>
+                                <p class="box2">205 verses</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-box1">
+                        <div class="border-box"><p>08</p></div>
+                        <div class="abt-box">
+                            <div class="box">
+                                <p class="box1">Al-Anfal</p>
+                                <p class="box2">The Spoils of War</p>
+                            </div>
+                            <div class="box">
+                                <p class="box1">الأنفال</p>
+                                <p class="box2">75 verses</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-box1">
+                        <div class="border-box"><p>09</p></div>
+                        <div class="abt-box">
+                            <div class="box">
+                                <p class="box1">At-Taubah</p>
+                                <p class="box2">The Repentance</p>
+                            </div>
+                            <div class="box">
+                                <p class="box1">التوبة</p>
+                                <p class="box2">129 verses</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-box1">
+                    <div class="border-box1">
+                        <div class="border-box"><p>10</p></div>
+                        <div class="abt-box2">
+                            <div class="box">
+                                <p class="box1">Yunus</p>
+                                <p class="box4">Jonah</p>
+                            </div>
+                            <div class="box">
+                                <p class="box1">يونس</p>
+                                <p class="box2">109 verses</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-box1">
+                        <div class="border-box"><p>11</p></div>
+                        <div class="abt-box3">
+                            <div class="box">
+                                <p class="box1">Hud</p>
+                                <p class="box2">Hud</p>
+                            </div>
+                            <div class="box">
+                                <p class="box1">هود</p>
+                                <p class="box2">123 verses</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-box1">
+                        <div class="border-box"><p>12</p></div>
+                        <div class="abt-box2">
+                            <div class="box">
+                                <p class="box1">Yusuf</p>
+                                <p class="box2">Joseph</p>
+                            </div>
+                            <div class="box">
+                                <p class="box1">يوسف</p>
+                                <p class="box2">111 verses</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="abt-button" href="./share more.html">Show More</a>
+    
+    
+
+    </div>
+        <div class="content-box">
+            <div class="content-images">
+                <div class="cont-img">
+                    <img class="content-image" src="images/unsplash_LI7jB1925j0.png">
+                    <img class="content-image" src="images/unsplash_LI7jB1925j0 (1).png">
+                </div>
+                <img class="person-image" src="images/as sudais image.jpg">
+                <div class="content-text">
+                    <p>Listen to recitation by your favorite Reciters</p>
+                    <h4>Listen holy quran by your favourite reciters and feel the best of quran. </h4>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="Blog">
+        <div class="blog-header">
+            <p>Latest Islamic Blog</p>
+            <h4>Read top free Islamic articles & blog posts on the Internet <br> and know about islam.</h4>
+        </div>
+
+        <div class="Blog-box">
+            <div class="blog-box">
+                <img class="Blog-image" src="images/Rectangle 72.png">
+
+                <div class="blog-content">
+                    <p class="blog1">How many times bismillah was repeated in the Quran?</p>
+                    <div class="hor-line"></div>
+                    <h4>How many times bismillah repeated in Quran? “In the name of God the most merciful...</h4>
+                    <a href="https://www.google.com/search?sca_esv=601771820&rlz=1C1YTUH_enNG1040NG1040&sxsrf=ACQVn08WJedFetuGxFIdNfZCzwkrMNzLYQ:1706306214941&q=How+many+times+bismillah+is+repeated+in+the+Quran?&spell=1&sa=X&ved=2ahUKEwjb9Mb-hfyDAxXDSUEAHRSjAwgQBSgAegQICRAC&biw=1707&bih=771&dpr=0.8">Read Now</a>
+                </div>
+            </div>
+            <div class="blog-box">
+                <img class="Blog-image" src="images/Rectangle 72 (1).png">
+
+                <div class="blog-content">
+                    <p class="blog1">10 Quranic verses on kindness you should know</p>
+                    <div class="hor-line"></div>
+                    <h4>A mark of a Muslim is in his or her kindness to other people, regardless of their faith.<h4>
+                    <a href="https://themuslimvibe.com/faith-islam/10-quranic-verses-on-kindness-you-should-memorise">Read Now</a>
+                </div>
+            </div>    
+        </div>
+        <div class="Blog-box1">
+            <div class="blog-box">
+                <img class="Blog-image" src="images/Rectangle 72 (2).png">
+
+                <div class="blog-content">
+                    <p class="blog1">How well do you know Suratul Mulk?</p>
+                    <div class="hor-line"></div>
+                    <h4>Suratul Mulk is the 67th chapter of the Holy Qur'an. It is one of the shorter chapters, comprising of only 30 verses.</h4>
+                    <a href="https://themuslimvibe.com/faith-islam/how-well-do-you-know-surah-mulk">Read Now</a>
+                </div>
+            </div>
+            <div class="blog-box">
+                <img class="Blog-image" src="images/Rectangle 72 (3).png">
+
+                <div class="blog-content">
+                    <p class="blog1">8 ways of understanding the attributes of Allah</p>
+                    <div class="hor-line"></div>
+                    <h4 class="blog2">The basic tenet of the Islamic faith is that there is no god but Allah and Muhammad (peace be upon him) is His Messenger.</h4>
+                    <a href="https://themuslimvibe.com/faith-islam/8-ways-of-understanding-the-attributes-of-allah#:~:text=The%20first%20category%20(being%20linked,69).">Read Now</a>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+    <div class="body-box">
+        <div>
+            <p class="body-text">Reciting and Listening to the <br> Quran is more easy now</p>
+            <p class="body-text1">How about you enoy reciting and listening to the Quran on our Quran <br> mobile application? Sounds cool, right!</p>
+            <div class="badge">
+                <img class="badge-img" src="images/Google Play badge.png">
+                <img src="images/App Store badge.png">
+            </div>
+        </div> 
+    </div>
+
+    <div id="footer">
+        <div class="foo-ter">
+            <div class="Footer">
+                <div>
+                    <img class="footer-logo" src="images/Logo.png">
+                    <div class="">
+                        <p class="Copyright">© Copyright 2022 QURAN. All Rights Reserved</p>
+                        <a class="icons" href=""><iconify-icon class="icon" icon="ri:facebook-fill"></iconify-icon><span><iconify-icon class="icon" icon="ri:linkedin-fill"></iconify-icon></span><span><iconify-icon class="icon" icon="ri:twitter-fill"></iconify-icon></span></a>
+                    </div>
+                </div>
+                <div class="footer-cont">
+                    <div class="footer-content">
+                        <p>Navigate</p>
+                        <div class="">
+                            <a href="#home">Home</a>
+                            <a href="#Translation">Reciters</a>
+                            <a href="#About">About Us</a>
+                            <a href="Blog">Blog</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-cont">
+                    <div class="footer-content">
+                        <p>Network</p>
+                        <div class="">
+                            <a href="QuranicAudio.com">QuranicAudio.com</a>
+                            <a href="Salah.com">Salah.com</a>
+                            <a href="Sunnah.com">Sunnah.com</a>
+                            <a href="Legacy.Quran.com">Legacy.Quran.com</a>
+                            <a href="Previous.Quran.com">Previous.Quran.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-cont">
+                    <div class="footer-content">
+                        <p>Popular-Links</p>
+                        <div class="">
+                            <a href="https://myislam.org/ayatul-kursi-english/">Ayatul Kursi</a>
+                            <a href="https://quran.com/en/ya-sin">Yaseen</a>
+                            <a href="https://quran.com/67">Al Mulk</a>
+                            <a href="https://quran.com/55">Ar-Rahman</a>
+                            <a href="https://quran.com/56">Al Waqi'ah</a>
+                            <a href="https://quran.com/18">Al Kahf</a>
+                            <a href="https://quran.com/73">Al Muzzammil</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-cont">
+                    <div class="footer-content">
+                        <p>Resources</p>
+                        <div class="">
+                            <h4>Mobile Apps</h4>
+                            <h4>Developer</h4>
+                            <h4>Product Updates</h4>
+                            <h4>Feedback</h4>
+                            <h4>Help</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-icon">
+            <div class="footer-line"></div>
+            <i class="bi bi-chevron-up"></i>
+        </div>
+        <p class="lang">English <span><i class="bi bi-chevron-down"></i></span></p>
+    </div>
+
+    <script src="script.js "></script>
+</body>
+</html>
