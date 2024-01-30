@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #FFA31A;
+    --white: #ffffff;
+    --dark: #0d1c2e;
+    --black: #000000;
+    --background: #e9e6d7;
+    --padding:16px;
+    --half-padding:8px;
+    --sm:468px;
+    --md:765px;
+    --lg:1024px;
+}
+
+body {
+    background: var(--background);
+}
+
+.container {
+    width: min(70rem, 95%);
+    margin-inline: auto;
+    padding-block: var(--padding);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul {
+    list-style: none;
+}
+
+header .link-wrapper a {
+    text-decoration: none;
+    color: #4B5056;
+    font-size: 18px;
+}
+
+header .link-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 18rem;
+}
+
+header .link-wrapper a:hover {
+    color: var(--primary);
+}
+
+header .buttons {
+    gap: 13rem;
+}
+
+header .nav-links {
+    display: flex;
+    gap: var(--padding);
+}  
+
+.span-button {
+    color: var(--white);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    /* font-size: 18px; */
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; 
+    /* width: 117px;
+    height: 48px; */
+    padding: 10px 20px;
+    border-radius: 4px;
+    background: #213A58;
+    cursor: pointer;
+}
+
+header .toggle,
+header .close {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    header .toggle,
+    header .close {
+        display: block;
+    }
+
+    header .close {
+        position: absolute;
+        left: var(--padding);
+        top: var(--padding);
+    }
+
+    header nav {
+        display: grid;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        right: 0;
+        background:var(--overlay);
+        cursor: pointer;
+        transform: translateX(100%);
+        transition: 0.2s ease-in-out transform;
+    }
+
+    header nav.open {
+        transform: translateX(0);
+    }
+
+    header .link-wrapper {
+        position: relative;
+        justify-self: end;
+        padding: var(--padding);
+        padding: 2rem;
+        flex-direction: column;
+        background: var(--primary);
+        height: 100%;
+        width: min(20rem, 85%);
+        cursor: default;
+    }
+
+    header .nav-links {
+        flex-direction: column;
+    }
+}

@@ -1,6 +1,17 @@
 var myButton = document.getElementById("myButton")
 var aboutSurah = document.getElementById("aboutSurah")
 
+let nav = document.querySelector("header nav");
+let navToggle = document.querySelector("header .toggle");
+let navClose = document.querySelector("header .close");
+
+navToggle.addEventListener("click", function () {
+    nav.classList.add("open")
+})
+navClose.addEventListener("click", function () {
+    nav.classList.remove("open")
+})
+
 myButton.addEventListener("click", function () {
     if (aboutSurah.style.display === "none") {
         aboutSurah.style.display = "block";
