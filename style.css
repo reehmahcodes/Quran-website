@@ -92,6 +92,9 @@ header .close {
     header .toggle, 
     header .close {
         display: block;
+        background: none;
+        border: none;
+        font-size: 20px;
     }
 
     header .close {
@@ -131,6 +134,12 @@ header .close {
 
     header .nav-links {
         flex-direction: column;
+    }
+
+    header .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
     }
 
 }
@@ -452,11 +461,11 @@ span button:hover {
 }
 
 td {
-    padding-right: 120px;
+    padding-right: 100px;
 }
 
 th {
-    padding-right: 120px;
+    padding-right: 100px;
     font-size: 20px;
 }
 
@@ -968,10 +977,13 @@ label {
 }
 
 input {
-    width: 80%;
+    width: 95%;
+    height: 25px;
 }
 
 .Log-in {
+    margin-top: 100px;
+    margin-bottom: 20px;
     text-align: center;
     font-size: 40px;
     font-weight: bold;
@@ -989,8 +1001,13 @@ input {
     color: white;
 }
 
+.login-text {
+    padding-top: 10px;
+}
+
 .login-submit {
     padding: 5px 10px;
+    background-color: white;
 }
 
 .login-submit:hover {
@@ -1087,7 +1104,7 @@ nav.bi {
         height: 46%;
         display: block;
         gap: 20px;
-        padding: 20px 250px 40px 20px;
+        padding: 20px 180px 40px 20px;
         text-align: center;
         margin-top: 0px;
     }
